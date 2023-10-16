@@ -1,17 +1,19 @@
-import { AddContact } from './AddContact/AddContact';
-import { ContactList } from './ContactList/ContactList';
-import { Filter } from './Filter/Filter';
-import { DivWrap } from './App.styled';
+import { Home } from 'Pages/Home';
+import { Layout } from './Layout';
+import { ContactsBook } from 'Pages/Contacts';
+import { RegisterForm } from './RegisterForm/RegisterForm';
+import { LoginForm } from './LoginForm/LoginForm';
+import { Route, Routes } from 'react-router-dom';
 
 export const App = () => {
   return (
-    <DivWrap>
-      <h1>Phonebook</h1>
-      <AddContact  />
-      <h2>Contacts</h2>
-      <Filter />
-      <ContactList
-      />
-    </DivWrap>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/contacts" element={<ContactsBook />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="/login" element={<LoginForm />} />
+      </Route>
+    </Routes>
   );
 };

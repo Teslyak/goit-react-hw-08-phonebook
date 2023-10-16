@@ -7,8 +7,8 @@ import {
   ButtonAddContact,
 } from './AddContact.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'components/Redux/selectors';
-import { addContacts } from '../Redux/operations';
+import { selectContacts } from 'components/Redux/contacts/selectors';
+import { addContacts } from 'components/Redux/contacts/operations';
 export const AddContact = () => {
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
