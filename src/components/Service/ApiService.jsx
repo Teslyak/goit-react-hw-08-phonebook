@@ -24,9 +24,9 @@ export const delContact = id => {
 };
 
 export const signUp = credentials => {
-  return axios.post('/users/signup', credentials);
+  return axios.post('users/signup', credentials);
 };
 
 export const loginUser = credentials => {
-  return axios.post('/users/login', credentials);
+  return axios.post('users/login', credentials);
 };
