@@ -12,15 +12,15 @@ export const clearAuthHeader = () => {
 axios.defaults.baseURL = BASE_URL;
 
 export const fetchDataAll = signal => {
-  return axios.get('contact', { signal });
+  return axios.get('contacts', { signal });
 };
 
 export const addNewContacts = contact => {
-  return axios.post('contact', contact);
+  return axios.post('contacts', contact);
 };
 
 export const delContact = id => {
-  return axios.delete(`contact/${id}`);
+  return axios.delete(`contacts/${id}`);
 };
 
 export const signUp = credentials => {
@@ -32,5 +32,9 @@ export const loginUser = credentials => {
 };
 
 export const logoutUser = () => {
-  return axios.post('/users/logout');
+  return axios.post('users/logout');
+};
+
+export const refreshLogin = () => {
+  return axios.get('users/current');
 };
