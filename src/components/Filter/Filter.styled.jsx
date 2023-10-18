@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LableFilter = styled.label`
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 `;
 

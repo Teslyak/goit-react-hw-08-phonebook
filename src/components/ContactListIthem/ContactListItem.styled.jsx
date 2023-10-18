@@ -9,7 +9,7 @@ export const Item = styled.li`
 
 export const ItemName = styled.p`
   margin: 0;
-  font-size: 20px;
+  font-size: 15px;
   margin-right: 10px;
   font-weight: bold;
 `;
@@ -27,7 +27,9 @@ export const Button = styled.button`
   width: 80px;
   padding: 2px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   &:hover {
     background-color: rgb(17 185 236);
+    color: black;
   }
 `;

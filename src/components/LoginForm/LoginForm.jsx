@@ -52,7 +52,7 @@ export const LoginForm = () => {
 
       <button
         type="submit"
-        className="flex flex=col mt-3 text-white font-bold  p-1  justify-center "
+        className="flex flex=col mt-3 text-white hover:text-black font-bold  p-1  justify-center "
         style={{
           backgroundColor: 'rgb(14 165 233)',
           width: '80px',

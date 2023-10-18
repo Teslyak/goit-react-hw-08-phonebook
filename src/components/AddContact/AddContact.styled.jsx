@@ -41,5 +41,6 @@ export const ButtonAddContact = styled.button`
   margin-left: 72.85px;
   &:hover {
     background-color: rgb(17 185 236);
+    color: black;
   }
 `;
