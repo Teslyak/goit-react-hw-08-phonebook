@@ -6,9 +6,8 @@ import { DivWrap } from '../components/App.styled';
 export const ContactsBook = () => {
   return (
     <DivWrap>
-      <h1>Phonebook</h1>
+      <h1 className="font-bold  text-2xl mt-10">Contacts list</h1>
       <AddContact />
-      <h2>Contacts</h2>
       <Filter />
       <ContactList />
     </DivWrap>

@@ -40,7 +40,7 @@ export const AddContact = () => {
   };
   return (
     <>
-      <FormAddContact onSubmit={handleAddInList}>
+      <FormAddContact className="mt-10 " onSubmit={handleAddInList}>
         <LabelAddContact>
           Name:
           <InputAddContact

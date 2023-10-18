@@ -7,9 +7,13 @@ export const UserMenu = () => {
   const user = useSelector(selectUser);
 
   return (
-    <div class="flex space-x-10">
-      <p>Welcome, {user.name}</p>
-      <button type="button" onClick={() => dispatch(logOut())}>
+    <div className="flex ">
+      <p className="mr-10  font-bold text-orange ">{`Welcome, ${user.email}`}</p>
+      <button
+        type="button"
+        onClick={() => dispatch(logOut())}
+        className=" font-bold text-white  hover:text-black"
+      >
         Logout
       </button>
     </div>

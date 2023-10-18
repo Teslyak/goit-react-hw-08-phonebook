@@ -23,7 +23,7 @@ const handleAddContactsFulfilled = (state, action) => {
 };
 
 const handleFetchContactsFulfilled = (state, action) => {
-  state.contacts.items.push(...action.payload);
+  state.contacts.items = action.payload;
   state.contacts.isLoading = false;
 };
 const handleDeleteContactsFulfilled = (state, action) => {

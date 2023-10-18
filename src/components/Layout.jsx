@@ -4,7 +4,7 @@ import { Navigation } from './Navigation/Navigation';
 export const Layout = () => {
   return (
     <>
-      <header class="p-15">
+      <header className="bg-sky-500 p-4 drop-shadow-lg ">
         <Navigation />
       </header>
       <Outlet />
