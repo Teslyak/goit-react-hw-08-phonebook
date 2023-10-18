@@ -6,10 +6,8 @@ import { NavLink } from 'react-router-dom';
 export const Navigation = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
-    <div>
-      <div>
-        <NavLink to="/">Home</NavLink>
-      </div>
+    <div class="flex">
+      <NavLink to="/">Home</NavLink>
       {isLoggedIn && (
         <div>
           <NavLink to="/contacts">Contacts</NavLink>

@@ -4,7 +4,7 @@ import { Navigation } from './Navigation/Navigation';
 export const Layout = () => {
   return (
     <>
-      <header>
+      <header class="p-15">
         <Navigation />
       </header>
       <Outlet />
